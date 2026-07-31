@@ -1,0 +1,161 @@
+data_dir                       :                            ../data/
+output_dir                     :                             output/
+data_name                      :                                Yelp
+do_eval                        :                                   0
+model_idx                      :                                   1
+load_pretrain                  :                                   1
+gpu_id                         :                                   0
+contrast_tau                   :                                 0.3
+contrast_weight                :                                 1.0
+noise_ratio                    :                                 0.0
+training_data_ratio            :                                 1.0
+similarity_model_name          :                          ItemCF_IUF
+base_augment_type              :                              random
+model_name                     :                             CLBARec
+hidden_size                    :                                  64
+num_hidden_layers              :                                   2
+num_attention_heads            :                                   2
+hidden_act                     :                                gelu
+initializer_range              :                                0.02
+max_seq_length                 :                                  50
+lr                             :                               0.001
+batch_size                     :                                 256
+no_cuda                        :                                   0
+log_freq                       :                                   1
+seed                           :                                2024
+weight_decay                   :                                 0.0
+adam_beta1                     :                                 0.9
+adam_beta2                     :                               0.999
+augmentation_warm_up_epoches   :                                 500
+epochs                         :                                 100
+pretrain_epoch                 :                                   0
+start_valid                    :                                  50
+patience                       :                                  20
+n_pairs                        :                                   2
+n_whole_level                  :                                   3
+wml_weight                     :                                 1.0
+aml_weight                     :                                 1.0
+rec_weight                     :                                 1.0
+attention_probs_dropout_prob   :                                 0.1
+hidden_dropout_prob            :                                 0.1
+beta                           :                                 0.5
+rate_min                       :                                 0.2
+rate_max                       :                                0.51
+cuda_condition                 :                                   1
+data_file                      :                    ../data/Yelp.txt
+item_size                      :                               20035
+log_file                       :           output/CLBARec-Yelp-1.txt
+Namespace(data_dir='../data/', output_dir='output/', data_name='Yelp', do_eval=False, model_idx=1, load_pretrain=True, gpu_id='0', contrast_tau=0.3, contrast_weight=1.0, noise_ratio=0.0, training_data_ratio=1.0, similarity_model_name='ItemCF_IUF', base_augment_type='random', model_name='CLBARec', hidden_size=64, num_hidden_layers=2, num_attention_heads=2, hidden_act='gelu', initializer_range=0.02, max_seq_length=50, lr=0.001, batch_size=256, no_cuda=False, log_freq=1, seed=2024, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, augmentation_warm_up_epoches=500, epochs=100, pretrain_epoch=0, start_valid=50, patience=20, n_pairs=2, n_whole_level=3, wml_weight=1.0, aml_weight=1.0, rec_weight=1.0, attention_probs_dropout_prob=0.1, hidden_dropout_prob=0.1, beta=0.5, rate_min=0.2, rate_max=0.51, cuda_condition=True, data_file='../data/Yelp.txt', item_size=20035, log_file='output/CLBARec-Yelp-1.txt')
+{'Epoch': 0, 'HIT@5': '0.0166', 'NDCG@5': '0.0106', 'HIT@10': '0.0302', 'NDCG@10': '0.0149', 'HIT@20': '0.0526', 'NDCG@20': '0.0205'}
+{'epoch': 0, 'rec_avg_loss': '0.2047'}
+{'epoch': 1, 'rec_avg_loss': '0.1963'}
+{'epoch': 2, 'rec_avg_loss': '0.1910'}
+{'epoch': 3, 'rec_avg_loss': '0.1894'}
+{'epoch': 4, 'rec_avg_loss': '0.1880'}
+{'epoch': 5, 'rec_avg_loss': '0.1868'}
+{'epoch': 6, 'rec_avg_loss': '0.1852'}
+{'epoch': 7, 'rec_avg_loss': '0.1822'}
+{'epoch': 8, 'rec_avg_loss': '0.1806'}
+{'epoch': 9, 'rec_avg_loss': '0.1807'}
+{'epoch': 10, 'rec_avg_loss': '0.1796'}
+{'epoch': 11, 'rec_avg_loss': '0.1793'}
+{'epoch': 12, 'rec_avg_loss': '0.1760'}
+{'epoch': 13, 'rec_avg_loss': '0.1766'}
+{'epoch': 14, 'rec_avg_loss': '0.1776'}
+{'epoch': 15, 'rec_avg_loss': '0.1748'}
+{'epoch': 16, 'rec_avg_loss': '0.1733'}
+{'epoch': 17, 'rec_avg_loss': '0.1764'}
+{'epoch': 18, 'rec_avg_loss': '0.1728'}
+{'epoch': 19, 'rec_avg_loss': '0.1730'}
+{'epoch': 20, 'rec_avg_loss': '0.1724'}
+{'epoch': 21, 'rec_avg_loss': '0.1739'}
+{'epoch': 22, 'rec_avg_loss': '0.1721'}
+{'epoch': 23, 'rec_avg_loss': '0.1702'}
+{'epoch': 24, 'rec_avg_loss': '0.1689'}
+{'epoch': 25, 'rec_avg_loss': '0.1698'}
+{'epoch': 26, 'rec_avg_loss': '0.1661'}
+{'epoch': 27, 'rec_avg_loss': '0.1685'}
+{'epoch': 28, 'rec_avg_loss': '0.1683'}
+{'epoch': 29, 'rec_avg_loss': '0.1663'}
+{'epoch': 30, 'rec_avg_loss': '0.1659'}
+{'epoch': 31, 'rec_avg_loss': '0.1671'}
+{'epoch': 32, 'rec_avg_loss': '0.1660'}
+{'epoch': 33, 'rec_avg_loss': '0.1639'}
+{'epoch': 34, 'rec_avg_loss': '0.1645'}
+{'epoch': 35, 'rec_avg_loss': '0.1655'}
+{'epoch': 36, 'rec_avg_loss': '0.1655'}
+{'epoch': 37, 'rec_avg_loss': '0.1634'}
+{'epoch': 38, 'rec_avg_loss': '0.1615'}
+{'epoch': 39, 'rec_avg_loss': '0.1650'}
+{'epoch': 40, 'rec_avg_loss': '0.1634'}
+{'epoch': 41, 'rec_avg_loss': '0.1620'}
+{'epoch': 42, 'rec_avg_loss': '0.1632'}
+{'epoch': 43, 'rec_avg_loss': '0.1629'}
+{'epoch': 44, 'rec_avg_loss': '0.1634'}
+{'epoch': 45, 'rec_avg_loss': '0.1626'}
+{'epoch': 46, 'rec_avg_loss': '0.1625'}
+{'epoch': 47, 'rec_avg_loss': '0.1604'}
+{'epoch': 48, 'rec_avg_loss': '0.1609'}
+{'epoch': 49, 'rec_avg_loss': '0.1597'}
+{'epoch': 50, 'rec_avg_loss': '0.1611'}
+{'epoch': 51, 'rec_avg_loss': '0.1602'}
+{'Epoch': 51, 'HIT@5': '0.0210', 'NDCG@5': '0.0134', 'HIT@10': '0.0362', 'NDCG@10': '0.0183', 'HIT@20': '0.0596', 'NDCG@20': '0.0241'}
+{'epoch': 52, 'rec_avg_loss': '0.1604'}
+{'Epoch': 52, 'HIT@5': '0.0216', 'NDCG@5': '0.0136', 'HIT@10': '0.0365', 'NDCG@10': '0.0184', 'HIT@20': '0.0612', 'NDCG@20': '0.0246'}
+{'epoch': 53, 'rec_avg_loss': '0.1604'}
+{'Epoch': 53, 'HIT@5': '0.0207', 'NDCG@5': '0.0129', 'HIT@10': '0.0369', 'NDCG@10': '0.0180', 'HIT@20': '0.0595', 'NDCG@20': '0.0237'}
+{'epoch': 54, 'rec_avg_loss': '0.1573'}
+{'Epoch': 54, 'HIT@5': '0.0220', 'NDCG@5': '0.0139', 'HIT@10': '0.0363', 'NDCG@10': '0.0184', 'HIT@20': '0.0603', 'NDCG@20': '0.0244'}
+{'epoch': 55, 'rec_avg_loss': '0.1577'}
+{'Epoch': 55, 'HIT@5': '0.0219', 'NDCG@5': '0.0139', 'HIT@10': '0.0368', 'NDCG@10': '0.0186', 'HIT@20': '0.0590', 'NDCG@20': '0.0242'}
+{'epoch': 56, 'rec_avg_loss': '0.1560'}
+{'Epoch': 56, 'HIT@5': '0.0213', 'NDCG@5': '0.0139', 'HIT@10': '0.0363', 'NDCG@10': '0.0187', 'HIT@20': '0.0611', 'NDCG@20': '0.0249'}
+{'epoch': 57, 'rec_avg_loss': '0.1572'}
+{'Epoch': 57, 'HIT@5': '0.0214', 'NDCG@5': '0.0134', 'HIT@10': '0.0358', 'NDCG@10': '0.0180', 'HIT@20': '0.0593', 'NDCG@20': '0.0239'}
+{'epoch': 58, 'rec_avg_loss': '0.1583'}
+{'Epoch': 58, 'HIT@5': '0.0215', 'NDCG@5': '0.0137', 'HIT@10': '0.0362', 'NDCG@10': '0.0184', 'HIT@20': '0.0603', 'NDCG@20': '0.0244'}
+{'epoch': 59, 'rec_avg_loss': '0.1558'}
+{'Epoch': 59, 'HIT@5': '0.0225', 'NDCG@5': '0.0140', 'HIT@10': '0.0384', 'NDCG@10': '0.0191', 'HIT@20': '0.0624', 'NDCG@20': '0.0251'}
+{'epoch': 60, 'rec_avg_loss': '0.1565'}
+{'Epoch': 60, 'HIT@5': '0.0211', 'NDCG@5': '0.0133', 'HIT@10': '0.0372', 'NDCG@10': '0.0185', 'HIT@20': '0.0602', 'NDCG@20': '0.0242'}
+{'epoch': 61, 'rec_avg_loss': '0.1566'}
+{'Epoch': 61, 'HIT@5': '0.0221', 'NDCG@5': '0.0138', 'HIT@10': '0.0388', 'NDCG@10': '0.0192', 'HIT@20': '0.0614', 'NDCG@20': '0.0248'}
+{'epoch': 62, 'rec_avg_loss': '0.1581'}
+{'Epoch': 62, 'HIT@5': '0.0215', 'NDCG@5': '0.0135', 'HIT@10': '0.0366', 'NDCG@10': '0.0184', 'HIT@20': '0.0607', 'NDCG@20': '0.0244'}
+{'epoch': 63, 'rec_avg_loss': '0.1575'}
+{'Epoch': 63, 'HIT@5': '0.0211', 'NDCG@5': '0.0136', 'HIT@10': '0.0359', 'NDCG@10': '0.0183', 'HIT@20': '0.0603', 'NDCG@20': '0.0244'}
+{'epoch': 64, 'rec_avg_loss': '0.1580'}
+{'Epoch': 64, 'HIT@5': '0.0214', 'NDCG@5': '0.0135', 'HIT@10': '0.0368', 'NDCG@10': '0.0184', 'HIT@20': '0.0615', 'NDCG@20': '0.0246'}
+{'epoch': 65, 'rec_avg_loss': '0.1559'}
+{'Epoch': 65, 'HIT@5': '0.0211', 'NDCG@5': '0.0131', 'HIT@10': '0.0371', 'NDCG@10': '0.0182', 'HIT@20': '0.0605', 'NDCG@20': '0.0241'}
+{'epoch': 66, 'rec_avg_loss': '0.1567'}
+{'Epoch': 66, 'HIT@5': '0.0213', 'NDCG@5': '0.0132', 'HIT@10': '0.0367', 'NDCG@10': '0.0181', 'HIT@20': '0.0595', 'NDCG@20': '0.0238'}
+{'epoch': 67, 'rec_avg_loss': '0.1560'}
+{'Epoch': 67, 'HIT@5': '0.0220', 'NDCG@5': '0.0136', 'HIT@10': '0.0377', 'NDCG@10': '0.0186', 'HIT@20': '0.0606', 'NDCG@20': '0.0244'}
+{'epoch': 68, 'rec_avg_loss': '0.1555'}
+{'Epoch': 68, 'HIT@5': '0.0210', 'NDCG@5': '0.0129', 'HIT@10': '0.0370', 'NDCG@10': '0.0181', 'HIT@20': '0.0607', 'NDCG@20': '0.0240'}
+{'epoch': 69, 'rec_avg_loss': '0.1541'}
+{'Epoch': 69, 'HIT@5': '0.0208', 'NDCG@5': '0.0129', 'HIT@10': '0.0368', 'NDCG@10': '0.0180', 'HIT@20': '0.0603', 'NDCG@20': '0.0240'}
+{'epoch': 70, 'rec_avg_loss': '0.1557'}
+{'Epoch': 70, 'HIT@5': '0.0205', 'NDCG@5': '0.0127', 'HIT@10': '0.0363', 'NDCG@10': '0.0178', 'HIT@20': '0.0610', 'NDCG@20': '0.0240'}
+{'epoch': 71, 'rec_avg_loss': '0.1544'}
+{'Epoch': 71, 'HIT@5': '0.0210', 'NDCG@5': '0.0130', 'HIT@10': '0.0360', 'NDCG@10': '0.0178', 'HIT@20': '0.0602', 'NDCG@20': '0.0239'}
+{'epoch': 72, 'rec_avg_loss': '0.1549'}
+{'Epoch': 72, 'HIT@5': '0.0208', 'NDCG@5': '0.0130', 'HIT@10': '0.0358', 'NDCG@10': '0.0178', 'HIT@20': '0.0601', 'NDCG@20': '0.0239'}
+{'epoch': 73, 'rec_avg_loss': '0.1538'}
+{'Epoch': 73, 'HIT@5': '0.0213', 'NDCG@5': '0.0132', 'HIT@10': '0.0368', 'NDCG@10': '0.0182', 'HIT@20': '0.0608', 'NDCG@20': '0.0242'}
+{'epoch': 74, 'rec_avg_loss': '0.1527'}
+{'Epoch': 74, 'HIT@5': '0.0206', 'NDCG@5': '0.0129', 'HIT@10': '0.0359', 'NDCG@10': '0.0178', 'HIT@20': '0.0594', 'NDCG@20': '0.0237'}
+{'epoch': 75, 'rec_avg_loss': '0.1533'}
+{'Epoch': 75, 'HIT@5': '0.0210', 'NDCG@5': '0.0133', 'HIT@10': '0.0364', 'NDCG@10': '0.0182', 'HIT@20': '0.0605', 'NDCG@20': '0.0243'}
+{'epoch': 76, 'rec_avg_loss': '0.1518'}
+{'Epoch': 76, 'HIT@5': '0.0216', 'NDCG@5': '0.0135', 'HIT@10': '0.0370', 'NDCG@10': '0.0184', 'HIT@20': '0.0617', 'NDCG@20': '0.0246'}
+{'epoch': 77, 'rec_avg_loss': '0.1518'}
+{'Epoch': 77, 'HIT@5': '0.0211', 'NDCG@5': '0.0134', 'HIT@10': '0.0363', 'NDCG@10': '0.0184', 'HIT@20': '0.0609', 'NDCG@20': '0.0245'}
+{'epoch': 78, 'rec_avg_loss': '0.1548'}
+{'Epoch': 78, 'HIT@5': '0.0214', 'NDCG@5': '0.0133', 'HIT@10': '0.0368', 'NDCG@10': '0.0183', 'HIT@20': '0.0598', 'NDCG@20': '0.0241'}
+{'epoch': 79, 'rec_avg_loss': '0.1527'}
+{'Epoch': 79, 'HIT@5': '0.0225', 'NDCG@5': '0.0137', 'HIT@10': '0.0367', 'NDCG@10': '0.0183', 'HIT@20': '0.0598', 'NDCG@20': '0.0241'}
+{'Epoch': 0, 'HIT@5': '0.0185', 'NDCG@5': '0.0117', 'HIT@10': '0.0329', 'NDCG@10': '0.0163', 'HIT@20': '0.0562', 'NDCG@20': '0.0222'}
+CLBARec-Yelp-1
+{'Epoch': 0, 'HIT@5': '0.0185', 'NDCG@5': '0.0117', 'HIT@10': '0.0329', 'NDCG@10': '0.0163', 'HIT@20': '0.0562', 'NDCG@20': '0.0222'}
