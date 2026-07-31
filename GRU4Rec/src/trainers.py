@@ -174,17 +174,10 @@ class SASRecTrainer(Trainer):
                         augment_rep = self.get_sequence_rep(augment_output, input_ids)
                         aug_output = self.model(aug_sequences)
                         aug_rep = self.get_sequence_rep(aug_output,input_ids)
-                        # aug_reps.append(aug_rep)
-#                         for prev_rep in aug_reps[:-1]:
-        
-#                             cl = self.nt_xent_loss(aug_rep, prev_rep, tau=self.args.contrast_tau)
-#                             contrast_loss_total += cl
+                        
                         contrast_loss = self.nt_xent_loss(aug_rep, augment_rep, tau=self.args.contrast_tau)
                         contrast_loss_total += contrast_loss
-                        # contrast_loss = self.nt_xent_loss(aug_rep, sequence_rep, tau=self.args.contrast_tau)
-                        # contrast_loss_total += contrast_loss
-                        # contrast_loss = self.nt_xent_loss(sequence_rep, augment_rep, tau=self.args.contrast_tau)
-                        # contrast_loss_total += contrast_loss
+                        
                         aug_losses.append(aug_loss)
                         joint_loss += self.args.aml_weight * aug_loss
                     
